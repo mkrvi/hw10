@@ -39,3 +39,16 @@ if (count || simpleNumber !== 0 || simpleNumber !== 1) {
 }
 
 // Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь.
+let firstNumber = +prompt('Enter your number');
+let outcome = 0;
+for (let number = 1; number <= firstNumber; number += 1) {
+    if (number ** 3 === firstNumber) {
+        outcome = 1;
+        break;
+    }
+}
+if (outcome === 1) {
+    console.log('You can receive this number')
+} else {
+    console.log('You can\'t receive this number')
+}
